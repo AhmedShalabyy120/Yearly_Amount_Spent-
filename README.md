@@ -14,28 +14,4 @@ This repository contains a data analysis and machine learning model for customer
     
     3. **Data Modeling**: The data is split into training and testing sets, features are standardized, and a linear regression model is created. The model's training and testing scores are evaluated.
 
-## Code
 
-The project's Python code is included in the `analysis.py` script. The code is organized into the following sections:
-
-```python
-import pandas as pd
-import seaborn as sns
-from sklearn.preprocessing import StandardScaler
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
-import joblib
-import warnings
-import plotly.express as px
-from datasist.structdata import detect_outliers
-
-# ... (code for data loading and preprocessing) ...
-
-# ... (code for data visualization and outlier removal) ...
-
-# ... (code for data modeling and training/testing the model) ...
-
-# Save the model, scaler, and feature list for future use
-joblib.dump(model, "model.h5")
-joblib.dump(scaler, "scaler.h5")
-joblib.dump(features, "features.h5")
